@@ -1,0 +1,41 @@
+/* for block of numbers */
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-align: center;
+    color:rgba(32,138,255,0.5);
+    /*color: #ccc;*/
+    /*border-right: 1px solid #CCC;*/
+    border-right: 10px solid rgba(0,0,0,0);
+    vertical-align: top;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* your custom style here */
+    
+    
+    -webkit-box-shadow: 1px 0 0 0 rgba(0,0,0,.2);
+    box-shadow: 1px 0 0 0 rgba(0,0,0,.2);
+}
+
+.hljs-ln-numbers::first-line {
+  content: "";
+  /*border-right: 10px solid rgba(0,0,0,0);*/
+  /*margin-right: 10px;*/
+}
+
+
+
+/* for block of code */
+.hljs-ln-code {
+    
+}
+
+.hljs-ln-code::first-letter {
+  content: "";
+  margin-left: 10px;
+}
