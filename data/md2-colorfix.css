@@ -1,0 +1,16 @@
+.mdui-theme-layout-dark .mdui-typo a:not(.no-typo) {
+    color: #8ab4f8;
+}
+
+.mdui-theme-layout-dark .mdui-typo a:not(.no-typo):before {
+    background-color: #8ab4f8;
+}
+
+.mdui-theme-layout-dark .mdui-color-theme {
+    background-color: #8ab4f8!important;
+}
+
+.mdui-theme-layout-dark .mdui-color-theme-accent {
+    background-color: #8ab4f8!important;
+    color: #fff!important;
+}
