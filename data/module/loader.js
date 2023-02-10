@@ -51,8 +51,9 @@ fileManager.load();
 try {
     (() => {
         if (fileAPI.type != 'PHP') return;
+        fileAPI.serverCheck();
         let mXHR = new XMLHttpRequest();
-        mXHR.open("GET", fileAPI.server + "docs.php", false);
+        mXHR.open("GET", fileAPI.useServerHttp, false);
         mXHR.send(null);
     })();
     // setTimeout(() => {
