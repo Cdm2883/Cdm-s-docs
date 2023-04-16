@@ -15,6 +15,11 @@
     -webkit-box-flex: 0!important;
         -ms-flex: none!important;
             flex: none!important;
+    max-width: 100vw!important;
+}
+
+.mdui-tooltip {
+    word-break: break-all;
 }
 
 .mdui-tab a .mdui-icon + label {
@@ -295,16 +300,38 @@ body:not(.mdui-theme-layout-dark) #left-drawer > .mdui-list > .mdui-list-item-ac
     color: hsla(0,0%,100%,.7);
 }
 
+#tabs-screen > div .mdui-typo h1::before,
+#tabs-screen > div .mdui-typo h2::before,
+#tabs-screen > div .mdui-typo h3::before,
+#tabs-screen > div .mdui-typo h4::before,
+#tabs-screen > div .mdui-typo h5::before,
+#tabs-screen > div .mdui-typo h6::before {
+    content: '#';
+    position: absolute;
+    font-weight: 900;
+    margin-left: -1em;
+    opacity: 0;
+    transition: all .05s ease-in-out;
+}
+
 #tabs-screen > div .mdui-typo h1:hover::before,
 #tabs-screen > div .mdui-typo h2:hover::before,
 #tabs-screen > div .mdui-typo h3:hover::before,
 #tabs-screen > div .mdui-typo h4:hover::before,
 #tabs-screen > div .mdui-typo h5:hover::before,
 #tabs-screen > div .mdui-typo h6:hover::before {
-    content: '#';
-    position: absolute;
-    margin-left: -1em;
-    font-weight: 900;
+    opacity: 1;
+    visibility: visible;
+}
+
+#tabs-screen > div {
+    transition: all .25s ease-in-out;
+}
+.file-tab-full-screen {
+    background: white;
+}
+.mdui-theme-layout-dark .file-tab-full-screen {
+    background: #303030;
 }
 
 #search-screen {
