@@ -74,13 +74,19 @@ var docsManager = {
                 icon: 'format_line_spacing',
                 title: 'Save the scrolling progress'
             },
-            ,
             {
                 type: 'switch',
                 k: 'cannot-open-the-same-file-twice',
                 icon: 'looks_one',
                 title: 'Open the same file on the same page',
                 content: 'If you turn, you will can\'t open the same file twice!'
+            },
+            {
+                type: 'switch',
+                k: 'readable-sidebar',
+                icon: 'format_indent_increase',
+                title: 'Make the sidebar more readable',
+                content: 'The sidebar expands to hold up the drawer'
             },
             'Website',
             {

@@ -61,7 +61,7 @@ try {
     //     document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
     // }, 500);
 } catch (error) {
-    mdui.alert('cannot connect server!');
+    mdui.alert('cannot connect server!', null, null, { history: false });
 }
 saveManager.load();
 tabManager.load();
